@@ -1,0 +1,11 @@
+/* @media (min-width: 576px) { 
+  #btnLogin{
+    border: 1px solid blue;
+    color: blue;
+  }
+ } */
+
+ * {
+  box-sizing: border-box;
+  margin: 0;
+ }
