@@ -5,7 +5,15 @@
   }
  } */
 
- * {
+* {
   box-sizing: border-box;
   margin: 0;
- }
+}
+
+#radial-bg {
+  background: hsla(259, 43%, 47%, 1);
+  background: linear-gradient(90deg, hsla(259, 43%, 47%, 1) 0%, hsla(281, 41%, 48%, 1) 22%, hsla(295, 41%, 49%, 1) 48%, hsla(310, 51%, 54%, 1) 74%, hsla(318, 69%, 59%, 1) 100%);
+  background: -moz-linear-gradient(90deg, hsla(259, 43%, 47%, 1) 0%, hsla(281, 41%, 48%, 1) 22%, hsla(295, 41%, 49%, 1) 48%, hsla(310, 51%, 54%, 1) 74%, hsla(318, 69%, 59%, 1) 100%);
+  background: -webkit-linear-gradient(90deg, hsla(259, 43%, 47%, 1) 0%, hsla(281, 41%, 48%, 1) 22%, hsla(295, 41%, 49%, 1) 48%, hsla(310, 51%, 54%, 1) 74%, hsla(318, 69%, 59%, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#6444ab", endColorstr="#8e48ae", GradientType=1);
+}
