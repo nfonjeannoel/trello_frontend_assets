@@ -17,3 +17,33 @@
   background: -webkit-linear-gradient(90deg, hsla(259, 43%, 47%, 1) 0%, hsla(281, 41%, 48%, 1) 22%, hsla(295, 41%, 49%, 1) 48%, hsla(310, 51%, 54%, 1) 74%, hsla(318, 69%, 59%, 1) 100%);
   filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#6444ab", endColorstr="#8e48ae", GradientType=1);
 }
+
+
+.card-board{
+  width: 276px !important;
+  height: 122px !important;
+  max-width: 276px !important;
+  max-height: 122px !important;
+  min-width: 276px !important;
+  min-height: 122px !important;
+}
+
+#members-nav{
+  height: 40px;
+}
+
+/* large screens */
+@media (min-width: 992px) { 
+  #members-nav{
+    height: 60px;
+  }
+}
+.scrollable-container {
+  display: flex;
+  overflow-x: scroll;
+}
+.column {
+  flex: 0 0 auto;
+  width: 300px; /* Adjust the width as needed */
+  padding: 10px;
+}
