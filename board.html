@@ -262,110 +262,347 @@
                 </nav>
 
 
-                <div class="modal fade  modal-fullscreen modal-lg" id="exampleModalCenteredScrollable" tabindex="-1" aria-labelledby="exampleModalCenteredScrollableTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                      <div class="modal-content px-0 px-lg-5">
-                        <div class="modal-header pb-0">
-                          <div class="d-flex justify-content-between flex-grow-1">
-                            <div>
-                                <h1 class=" fs-4 me-1 me-md-2 fw-bold " id="exampleModalCenteredScrollableTitle">Modal title  </h1>
-                                <p class="">In list currently checking</p>
-                            </div>
+                <div class="modal fade  modal-fullscreen modal-lg" id="exampleModalCenteredScrollable" tabindex="-1"
+                    aria-labelledby="exampleModalCenteredScrollableTitle" aria-hidden="true">
 
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                          </div>
-                        </div>
-                        <div class="modal-body align-top" style="min-height: 50vh;">
-                            <!-- top -->
-                            <div class="d-flex py-3 flex-grow-0 flex-wrap gap-3 gap-lg-5">
-                                <!-- members -->
-                                <div class="me-2">
-                                    <span class="fw-bold">Members</span>
-                                    <div class="d-flex flex-wrap gap-1 " style="font-size: 12px;">
-                                        <span class="rounded-5 border p-1 bg-primary fw-bold">NJ</span>
-                                        <span class="rounded-5 border p-1 bg-secondary fw-bold">BG</span>
-                                        <span class="rounded-5 border p-1 bg-danger fw-bold">CT</span>
-                                    </div>
-                                </div>
-                                <!-- labels -->
-                                <div class="me-2">
-                                    <span class="fw-bold">Labels</span>
-                                    <div class="d-flex flex-wrap gap-1 " style="font-size: 12px;">
-                                        <div class="btn btn-primary btn-sm">Progress</div>
-                                        <div class="btn btn-secondary btn-sm">checking</div>
-                                        <div class="btn btn-danger btn-sm">completed</div>
-                                    </div>
-                                </div>
-                                <!-- due date -->
-                                <div class="me-2">
-                                    <span class="fw-bold">Due date</span>
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content ">
+                            <div class="modal-header pb-2 px-3 px-lg-5">
+                                <div class="d-flex justify-content-between flex-grow-1">
                                     <div>
-                                        <span>Today at 5pm</span>
+                                        <h1 class=" fs-4 me-1 me-md-2 fw-bold "
+                                            id="exampleModalCenteredScrollableTitle">Modal title </h1>
+                                        <p class="">In list currently checking</p>
                                     </div>
+
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
                                 </div>
                             </div>
-                            <!-- description -->
-                            <div>
-                                <div class=" py-3"> 
-                                    <div class="d-flex flex-grow-1 justify-content-between">
-                                        <span class="fw-bold">Description</span>
-                                        <button class="btn btn-sm btn-light">Edit</button>
-                                    </div>
-                                </div>
-                                <div>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos repellendus inventore veritatis illum, laudantium ducimus quidem perferendis voluptatem magni doloremque commodi obcaecati ullam? Sit voluptas ut mollitia sequi accusamus dignissimos.</p>
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit.</p>
-                                    <p>Lorem ipsum dolor sit.</p>
-                                </div>
-                            </div>
-                            <!-- attachments -->
-                            <div>
-                                <div class=" py-3"> 
-                                    <div class="">
-                                        <span class="fw-bold">Attachments</span>
-                                    </div>
-                                </div>
-                                <div class="mb-2 mb-lg-3">
-                                    <div class="row mx-1 mx-lg-0">
-                                        <div class="col-3 d-flex justify-content-center align-items-center bg-light px-3 py-2 px-lg-5 py-lg-4 ">
-                                            <span class="p-0 fw-bold fs-3">py</span>
+                            <div class="modal-body align-top ps-3 ps-lg-5" style="min-height: 50vh;">
+                                <div class="row">
+                                    <div class="col col-12 col-lg-9">
+                                        <!-- top -->
+                                        <div class="d-flex py-0 py-lg-3 flex-grow-0 flex-wrap gap-3 gap-lg-5">
+                                            <!-- members -->
+                                            <div class="me-2">
+                                                <span class="fw-bold">Members</span>
+                                                <div class="d-flex flex-wrap gap-1 " style="font-size: 12px;">
+                                                    <span class="rounded-5 border p-1 bg-primary fw-bold">NJ</span>
+                                                    <span class="rounded-5 border p-1 bg-secondary fw-bold">BG</span>
+                                                    <span class="rounded-5 border p-1 bg-danger fw-bold">CT</span>
+                                                    <!-- add new member -->
+                                                    <span class="rounded-5 border p-1 bg-light fw-bold"><i class="bi bi-plus-lg"></i></span>
+                                                </div>
+                                            </div>
+                                            <!-- labels -->
+                                            <div class="me-2">
+                                                <span class="fw-bold">Labels</span>
+                                                <div class="d-flex flex-wrap gap-1 " style="font-size: 12px;">
+                                                    <div class="btn btn-primary btn-sm">Progress</div>
+                                                    <div class="btn btn-secondary btn-sm">checking</div>
+                                                    <div class="btn btn-danger btn-sm">completed</div>
+
+                                                    <!-- add label -->
+                                                    <div class="btn bg-light btn-sm"><i class="bi bi-plus-lg"></i></div>
+                                                </div>
+                                            </div>
+                                            <!-- due date -->
+                                            <div class="me-2">
+                                                <span class="fw-bold">Due date</span>
+                                                <div>
+                                                    <span>
+                                                        <input type="checkbox" class="" name="" id="">
+                                                    </span>
+                                                    <button type="button" class="btn btn-light btn-sm d-inline-flex align-items-center">Today at 5pm  <span class="ms-2 badge rounded bg-danger">overdue</span> <i class="ms-2 bi bi-chevron-down"></i></button>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="col-9 px-3 py-2  bg-light-subtle">
-                                            <span class="fw-bold">new app json.py</span> 
-                                            <p>uploaded 2 days ago</p>
+                                        <!-- description -->
+                                        <div>
+                                            <div class=" py-3">
+                                                <div class="d-flex flex-grow-1 justify-content-between">
+                                                    <span class="fw-bold">Description</span>
+                                                    <button class="btn btn-sm btn-light">Edit</button>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+                                                    repellendus
+                                                    inventore veritatis illum, laudantium ducimus quidem perferendis
+                                                    voluptatem
+                                                    magni doloremque commodi obcaecati ullam? Sit voluptas ut mollitia
+                                                    sequi
+                                                    accusamus dignissimos.</p>
+                                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                                    Reprehenderit.</p>
+                                                <p>Lorem ipsum dolor sit.</p>
+                                            </div>
+                                        </div>
+                                        <!-- attachments -->
+                                        <div>
+                                            <div class=" py-3">
+                                                <div class="">
+                                                    <span class="fw-bold">Attachments</span>
+                                                </div>
+                                            </div>
+                                            <div class="mb-2 mb-lg-3">
+                                                <div class="row mx-1 mx-lg-0">
+                                                    <div
+                                                        class="col-3 d-flex justify-content-center align-items-center bg-light px-3 py-2 px-lg-5 py-lg-4 ">
+                                                        <span class="p-0 fw-bold fs-3">py</span>
+                                                    </div>
+                                                    <div class="col-9 px-3 py-2  bg-light-subtle">
+                                                        <span class="fw-bold">new app json.py</span>
+                                                        <p>uploaded 2 days ago</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div>
+                                                <button class="btn btn-light btn-sm mx-1 mx-lg-0">Add
+                                                    attachment</button>
+                                            </div>
+                                        </div>
+                                        <!-- activity -->
+                                        <div>
+                                            <div>
+                                                <div class=" py-3 pt-5">
+                                                    <div class="d-flex flex-grow-1 justify-content-between">
+                                                        <span class="fw-bold">Activity</span>
+                                                        <button class="btn btn-sm btn-light">Show activity</button>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <!-- Compose New message -->
+                                                    <div class="mb-3 py-0 py-lg-1">
+                                                        <!-- message sender image -->
+                                                        <div class="d-flex">
+                                                            <span
+                                                                class="rounded-5 border p-1 bg-primary flex-grow-0 flex fw-bold me-2"
+                                                                style="height: min-content;">NJ</span>
+                                                            <input type="text " class="form-control "
+                                                                id="validationServer01" placeholder="Write a comment..."
+                                                                required>
+                                                            <textarea class="form-control d-none"
+                                                                aria-label="With textarea"
+                                                                placeholder="Write a comment"></textarea>
+                                                            <button class="btn btn-sm btn-primary ms-2 d-none"
+                                                                style="height: min-content;">send</button>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <!-- Old message -->
+                                                    <div class="mb-3 py-0 py-lg-1">
+                                                        <!-- message sender image -->
+                                                        <div class="d-flex">
+                                                            <div>
+                                                                <span
+                                                                    class="rounded-5 border p-1 bg-primary flex-grow-0 flex fw-bold me-2"
+                                                                    style="height: min-content;">NJ</span>
+                                                            </div>
+                                                            <div class="d-flex flex-grow-1">
+                                                                <div class="d-flex flex-grow-1 flex-column">
+                                                                    <div class="">
+                                                                        <span class="me-2 fw-bold">nfon jeannoel </span>
+                                                                        <span style="font-size: 12px;">an hour
+                                                                            ago</span>
+                                                                    </div>
+                                                                    <p class="border p-2 bg-light-subtle rounded mb-0">
+                                                                        Lorem
+                                                                        ipsum, dolor sit amet consectetur adipisicing
+                                                                        elit. Tenetur incidunt accusantium, eaque
+                                                                        perspiciatis asperiores dolor. </p>
+                                                                    <div class="d-flex gap-2" style="font-size: 12px;">
+                                                                        <i class="bi bi-emoji-smile"></i>
+                                                                        <span class="fw-bold">.</span>
+                                                                        <a a href="#"
+                                                                            class="link-dark link-offset-2 link-underline-dark link-underline-opacity-25 link-underline-opacity-100-hover">Edit</a>
+                                                                        <span class="fw-bold">.</span>
+                                                                        <a a href="#"
+                                                                            class="link-dark link-offset-2 link-underline-dark link-underline-opacity-25 link-underline-opacity-100-hover">Delete</a>
+                                                                    </div>
+                                                                    <textarea class="form-control d-none"
+                                                                        aria-label="With textarea"
+                                                                        placeholder="Write a comment">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur incidunt accusantium, eaque perspiciatis asperiores dolor. </textarea>
+                                                                </div>
+                                                                <!-- <button class="btn btn-sm btn-primary ms-2"
+                                                                    style="height: min-content;">send</button> -->
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <!-- card activity -->
+                                                    <div class="mb-3 py-0 py-lg-1">
+                                                        <!-- message sender image -->
+                                                        <div class="d-flex">
+                                                            <div>
+                                                                <span
+                                                                    class="rounded-5 border p-1 bg-info flex-grow-0 flex fw-bold me-2"
+                                                                    style="height: min-content;">JD</span>
+                                                            </div>
+                                                            <div class="d-flex flex-grow-1">
+                                                                <div class="d-flex flex-grow-1 flex-column">
+                                                                    <div class="">
+                                                                        <span class="me-2 fw-bold">John Doe </span>
+                                                                        <span style="">attached <b>new app json.py</b> to this
+                                                                            card</span>
+                                                                    </div>
+                                                                    <p class="mb-0" style="font-size: 12px;">
+                                                                        Aug 15 at 10:16 AM </p>
+                                                                </div>
+                                                                <!-- <button class="btn btn-sm btn-primary ms-2"
+                                                                    style="height: min-content;">send</button> -->
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+
+                                                    <!-- Old message -->
+                                                    <div class="mb-3 py-0 py-lg-1">
+                                                        <!-- message sender image -->
+                                                        <div class="d-flex">
+                                                            <div>
+                                                                <span
+                                                                    class="rounded-5 border p-1 bg-info flex-grow-0 flex fw-bold me-2"
+                                                                    style="height: min-content;">JD</span>
+                                                            </div>
+                                                            <div class="d-flex flex-grow-1">
+                                                                <div class="d-flex flex-grow-1 flex-column">
+                                                                    <div class="">
+                                                                        <span class="me-2 fw-bold">John Doe </span>
+                                                                        <span style="font-size: 12px;">an hour
+                                                                            ago</span>
+                                                                    </div>
+                                                                    <p class="border p-2 bg-light-subtle rounded mb-0">
+                                                                        Lorem
+                                                                        ipsum, dolor sit amet consectetur adipisicing
+                                                                        elit. Tenetur incidunt accusantium, </p>
+                                                                    <div class="d-flex gap-2" style="font-size: 12px;">
+                                                                        <i class="bi bi-emoji-smile"></i>
+                                                                        <span class="fw-bold">.</span>
+                                                                        <a a href="#"
+                                                                            class="link-dark link-offset-2 link-underline-dark link-underline-opacity-25 link-underline-opacity-100-hover">Reply</a>
+                                                                    </div>
+                                                                    <textarea class="form-control d-none"
+                                                                        aria-label="With textarea"
+                                                                        placeholder="Write a comment">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur incidunt accusantium, eaque perspiciatis asperiores dolor. </textarea>
+                                                                </div>
+                                                                <!-- <button class="btn btn-sm btn-primary ms-2"
+                                                                    style="height: min-content;">send</button> -->
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+
+
+
+
+                                                </div>
+                                            </div>
+
+
                                         </div>
                                     </div>
-                                    
-                                </div>
-                                <div>
-                                    <button class="btn btn-light btn-sm mx-1 mx-lg-0">Add attachment</button>
-                                </div>
-                            </div>
-                            <!-- activity -->
-                            <div>
-                                <div class=" py-3 pt-5"> 
-                                    <div class="d-flex flex-grow-1 justify-content-between">
-                                        <span class="fw-bold">Activity</span>
-                                        <button class="btn btn-sm btn-light">Show activity</button>
+                                    <div class="col col-3 d-none d-lg-block d-flex flex-column px-3 py-3">
+
+                                        <p>Add to card</p>
+                                        <!-- members -->
+                                        <button class="btn btn-light w-100  text-start  btn-sm mb-2" type="button">
+                                            <i class="bi bi-people ms-1 me-2"></i>
+                                            Members
+                                        </button>
+
+
+                                        <!-- labels -->
+                                        <button class="btn btn-light w-100 text-start btn-sm mb-2" type="button">
+                                            <i class="bi bi-key ms-1 me-2"></i>
+                                            Labels
+                                        </button>
+
+                                        <!-- Checklist -->
+                                        <button class="btn btn-light w-100 text-start btn-sm mb-2" type="button">
+                                            <i class="bi bi-check ms-1 me-2"></i>
+                                            Checklist
+                                        </button>
+
+                                        <!-- Dates -->
+                                        <button class="btn btn-light w-100 text-start btn-sm mb-2" type="button">
+                                            <i class="bi bi-calendar ms-1 me-2"></i>
+                                            Dates
+                                        </button>
+
+                                        <!-- attachments -->
+                                        <button class="btn btn-light w-100 text-start btn-sm mb-2" type="button">
+                                            <i class="bi bi-file ms-1 me-2"></i>
+                                            Attachments
+                                        </button>
+
+                                        <!-- cover -->
+                                        <button class="btn btn-light w-100 text-start btn-sm mb-2" type="button">
+                                            <i class="bi bi-image ms-1 me-2"></i>
+                                            cover
+                                        </button>
+
+                                        <!-- custom fields -->
+                                        <button class="btn btn-light w-100 text-start btn-sm mb-2" type="button">
+                                            <i class="bi bi-hammer ms-1 me-2"></i>
+                                            Custom fields
+                                        </button>
+
+                                        <!-- Power ups -->
+                                        <p class="mt-4">Power ups</p>
+                                        <!-- Add Power ups -->
+                                        <button class="btn bg-light-subtle w-100 text-start btn-sm mb-2" type="button">
+                                            <i class="bi bi-plus-lg ms-1 me-2"></i>
+                                            Add Power ups
+                                        </button>
+
+                                        <!-- Automation -->
+                                        <p class="mt-4">Automation</p>
+                                        <!-- custom fields -->
+                                        <button class="btn bg-light-subtle w-100 text-start btn-sm mb-2" type="button">
+                                            <i class="bi bi-plus-lg ms-1 me-2"></i>
+                                            Add button
+                                        </button>
+
+                                        <!-- actions -->
+                                        <p class="mt-4">Actions</p>
+                                        <!-- Move -->
+                                        <button class="btn btn-light w-100 text-start btn-sm mb-2" type="button">
+                                            <i class="bi bi-arrow-right ms-1 me-2"></i>
+                                            Move
+                                        </button>
+                                        <!-- Copy -->
+                                        <button class="btn btn-light w-100 text-start btn-sm mb-2" type="button">
+                                            <i class="bi bi-clipboard ms-1 me-2"></i>
+                                            Copy
+                                        </button>
+                                        <!-- Archive -->
+                                        <button class="btn btn-light w-100 text-start btn-sm mb-2" type="button">
+                                            <i class="bi bi-archive ms-1 me-2"></i>
+                                            Archive
+                                        </button>
                                     </div>
-                                </div>
-                                <div>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos repellendus inventore veritatis illum, laudantium ducimus quidem perferendis voluptatem magni doloremque commodi obcaecati ullam? Sit voluptas ut mollitia sequi accusamus dignissimos.</p>
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit.</p>
-                                    <p>Lorem ipsum dolor sit.</p>
+
                                 </div>
                             </div>
                         </div>
-                      </div>
+
                     </div>
-                  </div>    
+                </div>
                 <div class="scrollable-container ">
                     <div class="column">
                         <div class="card ">
                             <div class="card-header mb-2">
                                 List 1
                             </div>
-                            <div class="card mx-2 mb-2" data-bs-toggle="modal" data-bs-target="#exampleModalCenteredScrollable">
+                            <div class="card mx-2 mb-2" data-bs-toggle="modal"
+                                data-bs-target="#exampleModalCenteredScrollable">
                                 <div class="card-body p-2">
 
 
@@ -440,7 +677,7 @@
 
                                 </div>
                             </div>
-                            
+
                             <div class="card-footer text-body-secondary m-0 p-0">
                                 <button class="btn btn-sm w-100">+ Add Card</button>
                             </div>
